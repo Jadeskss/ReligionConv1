@@ -1,0 +1,242 @@
+/* Certificate Styles */
+.certificate-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.certificate {
+    flex: 1;
+    background-color: #fff;
+    border: 15px solid #e5b53b;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    position: relative;
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    min-height: 500px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.certificate-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiLz48cGF0aCBkPSJNNTAgNTBMOTMuMyA3NS41TDc4LjUgMjguOUwyMS41IDI4LjlMNi43IDc1LjVMNTAgNTBaIiBzdHJva2U9IiNlNWI1M2IiIHN0cm9rZS13aWR0aD0iMC41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjA1Ii8+PC9zdmc+') center center;
+}
+
+.certificate-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.certificate-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #e5b53b;
+    padding-bottom: 1rem;
+}
+
+.certificate-seal {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIgZmlsbD0iI2U1YjUzYiIgc3Ryb2tlPSIjOTk2MzE0IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI1MCIgeT0iNTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNmZmYiPk9GRklDSUFMPC90ZXh0Pjx0ZXh0IHg9IjUwIiB5PSI2NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iI2ZmZiI+U0VBTDwvdGV4dD48L3N2Zz4=') no-repeat center center;
+    background-size: contain;
+}
+
+.certificate-body {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certificate-text {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.certificate-name {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #333;
+    font-family: 'Brush Script MT', cursive;
+    letter-spacing: 1px;
+}
+
+.certificate-religion {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #996314;
+}
+
+.certificate-date {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+.certificate-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.certificate-signature {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.signature-line {
+    width: 200px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 0.5rem;
+}
+
+.certificate-id {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 2rem;
+}
+
+.qr-code {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.qr-title {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.certificate-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.action-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #e5b53b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #996314;
+}
+
+.hidden {
+    display: none;
+}
+/* Add these styles to your existing certificate.css file */
+
+.certificate-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.certificate-signature {
+    text-align: center;
+    margin-top: 1rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.certificate-qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+}
+
+.certificate-qr {
+    background: white;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.certificate-qr-container p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.certificate-id {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 2rem;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 600px) {
+    .certificate-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .certificate-signature, .certificate-qr-container {
+        margin-bottom: 1.5rem;
+    }
+}
+/* Print styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .certificate-container, .certificate-container * {
+        visibility: visible;
+    }
+    .certificate-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .certificate-actions, .qr-code {
+        display: none;
+    }
+}

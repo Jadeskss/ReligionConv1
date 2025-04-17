@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Development - Qpal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #e5b53b, #996314);
+            padding: 30px 20px;
+            color: white;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .icon-container {
+            margin: 20px 0 40px;
+        }
+        
+        .icon-container i {
+            font-size: 5rem;
+            color: #e5b53b;
+            animation: pulse 2s infinite;
+        }
+        
+        .progress-container {
+            margin: 40px 0;
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            margin: 15px auto;
+            width: 80%;
+            max-width: 500px;
+        }
+        
+        .progress-fill {
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(45deg, #e5b53b, #996314);
+            border-radius: 5px;
+            width: 75%;
+            animation: progress 2.5s ease-in-out;
+        }
+        
+        .home-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #e5b53b, #996314);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(153, 99, 20, 0.3);
+        }
+        
+        .home-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(153, 99, 20, 0.4);
+        }
+        
+        .home-button i {
+            margin-right: 10px;
+        }
+        
+        .info {
+            margin-top: 40px;
+            color: #666;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #e5b53b;
+            color: white;
+            line-height: 40px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-3px);
+            background-color: #996314;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes progress {
+            0% { width: 0; }
+            100% { width: 75%; }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
+            .icon-container i {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Under Development</h1>
+            <p>We're working hard to bring you an amazing experience</p>
+        </div>
+        
+        <div class="content">
+            <div class="icon-container">
+                <i class="fas fa-tools"></i>
+            </div>
+            
+            <h2>This Page is Coming Soon</h2>
+            <p>Our team of experts is currently building this section of the website.</p>
+            
+            <div class="progress-container">
+                <p>Development Progress</p>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p>75% Complete</p>
+            </div>
+            
+            <a href="index.html" class="home-button">
+                <i class="fas fa-home"></i> Return to Home
+            </a>
+            
+            <div class="info">
+                <p>For inquiries, please contact us at: <strong>Jademadriaga6@gmail.com</strong></p>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Jade.Tzyyy"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/Jade.Tzyyy"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/Jade.Tzyyy"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

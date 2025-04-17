@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religious | Qpal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/certificate.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-certificate"></i>
+            <span>Religion Converter</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="underdev.html">About</a></li>
+                <li><a href="underdev.html">FAQ</a></li>
+                <li><a href="underdev.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Official Religious Conversion Certificate</h1>
+            <p>Developed By: Qpals</p>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <h2><i class="fas fa-pen-to-square"></i> Generate Your Certificate</h2>
+                <form id="conversionForm">
+                    <div class="form-group">
+                        <label for="name">Full Legal Name:</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fromReligion">Current Religion:</label>
+                        <select id="fromReligion" required>
+                            <option value="" disabled selected>Select your current religion</option>
+                            <option value="Catholic">Catholic</option>
+                            <option value="Protestant">Protestant</option>
+                            <option value="Baptist">Baptist</option>
+                            <option value="Methodist">Methodist</option>
+                            <option value="Lutheran">Lutheran</option>
+                            <option value="Orthodox">Orthodox</option>
+                            <option value="Jewish">Jewish</option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddhist">Buddhist</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="toReligion">Converting To:</label>
+                        <select id="toReligion" required>
+                            <option value="" disabled selected>Select religion to convert to</option>
+                            <option value="Iglesia Ni Cristo (INC)">Iglesia Ni Cristo (INC)</option>
+                            <option value="Protestant">Protestant</option>
+                            <option value="Baptist">Baptist</option>
+                            <option value="Methodist">Methodist</option>
+                            <option value="Lutheran">Lutheran</option>
+                            <option value="Orthodox">Orthodox</option>
+                            <option value="Jewish">Jewish</option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddhist">Buddhist</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Date of Conversion:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-certificate"></i> Convert
+                    </button>
+                </form>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure & Private</h3>
+                    <p>Your information is never stored on our servers</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-qrcode"></i>
+                    <h3>QR Verification</h3>
+                    <p>Each certificate includes a unique QR code</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-download"></i>
+                    <h3>Easy Download</h3>
+                    <p>Save your certificate as PDF or image</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificateSection" class="hidden">
+            <h2><i class="fas fa-award"></i> Your Official Conversion Certificate</h2>
+            <div class="certificate-container">
+                <div id="certificate" class="certificate"></div>
+                <div id="qrCodeSection" class="qr-code"></div>
+            </div>
+            <div class="certificate-actions">
+                <button id="downloadBtn" class="action-btn"><i class="fas fa-download"></i> Download</button>
+                <button id="printBtn" class="action-btn"><i class="fas fa-print"></i> Print</button>
+                <button id="newCertBtn" class="action-btn"><i class="fas fa-plus"></i> Create New</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Religion Converter</h3>
+                <p>This is only a lokoko</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="underdev.html">Privacy Policy</a></li>
+                    <li><a href="underdev.html">Terms of Service</a></li>
+                    <li><a href="underdev.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> Brentdelacruz@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Qpal Converter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ...existing code... -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="scripts/main.js"></script>
+<!-- ...existing code... -->
+</html>
