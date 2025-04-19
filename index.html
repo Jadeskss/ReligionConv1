@@ -3,150 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Religious | Qpal</title>
+    <title>Website Closed - Qpal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/certificate.css">
+    <style>
+        :root {
+            --primary-color: #e5b53b;
+            --secondary-color: #996314;
+            --text-color: #333;
+            --background-color: #f5f7fa;
+            --card-color: #fff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: var(--text-color);
+        }
+        
+        .container {
+            background-color: var(--card-color);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 800px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .icon-container {
+            margin-bottom: 30px;
+        }
+        
+        .icon-container i {
+            font-size: 4.5rem;
+            color: var(--primary-color);
+            background: #fff;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+        
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .content p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #666;
+        }
+        
+        .redirect-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 5px 15px rgba(153, 99, 20, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .redirect-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(153, 99, 20, 0.4);
+        }
+        
+        .redirect-button i {
+            margin-left: 10px;
+        }
+        
+        .decoration {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        /* Enhanced responsive styles */
+        @media screen and (max-width: 992px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .header {
+                padding: 35px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 40px 25px;
+            }
+            
+            .content h2 {
+                font-size: 1.7rem;
+            }
+            
+            .content p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            
+            .icon-container i {
+                font-size: 3.5rem;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+            }
+            
+            .redirect-button {
+                padding: 12px 35px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .header {
+                padding: 25px 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .content h2 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+            
+            .content p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+            
+            .icon-container {
+                margin-bottom: 25px;
+            }
+            
+            .icon-container i {
+                font-size: 3rem;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+            }
+            
+            .redirect-button {
+                padding: 10px 30px;
+                font-size: 0.95rem;
+                margin-top: 15px;
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .footer {
+                margin-top: 30px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media screen and (max-width: 360px) {
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            
+            .content h2 {
+                font-size: 1.3rem;
+            }
+            
+            .icon-container i {
+                font-size: 2.5rem;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+            }
+        }
+        
+        /* Added touch support for mobile devices */
+        @media (hover: none) {
+            .redirect-button:active {
+                transform: scale(0.98);
+                box-shadow: 0 2px 10px rgba(153, 99, 20, 0.3);
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <i class="fas fa-certificate"></i>
-            <span>Religion Converter</span>
+    <div class="container">
+        <div class="header">
+            <h1>Religion Converter</h1>
+            <p>Thank you for being part of our journey</p>
+            <p>By: Qpals</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="underdev.html">About</a></li>
-                <li><a href="underdev.html">FAQ</a></li>
-                <li><a href="underdev.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section class="hero">
-            <h1>Official Religious Conversion Certificate</h1>
-            <p>Developed By: Qpals</p>
-        </section>
-
-        <section class="form-section">
-            <div class="form-container">
-                <h2><i class="fas fa-pen-to-square"></i> Generate Your Certificate</h2>
-                <form id="conversionForm">
-                    <div class="form-group">
-                        <label for="name">Full Legal Name:</label>
-                        <input type="text" id="name" placeholder="Enter your full name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="fromReligion">Current Religion:</label>
-                        <select id="fromReligion" required>
-                            <option value="" disabled selected>Select your current religion</option>
-                            <option value="Catholic">Catholic</option>
-                            <option value="Protestant">Protestant</option>
-                            <option value="Baptist">Baptist</option>
-                            <option value="Methodist">Methodist</option>
-                            <option value="Lutheran">Lutheran</option>
-                            <option value="Orthodox">Orthodox</option>
-                            <option value="Jewish">Jewish</option>
-                            <option value="Muslim">Muslim</option>
-                            <option value="Hindu">Hindu</option>
-                            <option value="Buddhist">Buddhist</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="toReligion">Converting To:</label>
-                        <select id="toReligion" required>
-                            <option value="" disabled selected>Select religion to convert to</option>
-                            <option value="Iglesia Ni Cristo (INC)">Iglesia Ni Cristo (INC)</option>
-                            <option value="Protestant">Protestant</option>
-                            <option value="Baptist">Baptist</option>
-                            <option value="Methodist">Methodist</option>
-                            <option value="Lutheran">Lutheran</option>
-                            <option value="Orthodox">Orthodox</option>
-                            <option value="Jewish">Jewish</option>
-                            <option value="Muslim">Muslim</option>
-                            <option value="Hindu">Hindu</option>
-                            <option value="Buddhist">Buddhist</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="date">Date of Conversion:</label>
-                        <input type="date" id="date" required>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-certificate"></i> Convert
-                    </button>
-                </form>
+        
+        <div class="content">
+            <div class="icon-container">
+                <i class="fas fa-store-slash"></i>
             </div>
             
-            <div class="info-panel">
-                <div class="info-card">
-                    <i class="fas fa-lock"></i>
-                    <h3>Secure & Private</h3>
-                    <p>Your information is never stored on our servers</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-qrcode"></i>
-                    <h3>QR Verification</h3>
-                    <p>Each certificate includes a unique QR code</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-download"></i>
-                    <h3>Easy Download</h3>
-                    <p>Save your certificate as PDF or image</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="certificateSection" class="hidden">
-            <h2><i class="fas fa-award"></i> Your Official Conversion Certificate</h2>
-            <div class="certificate-container">
-                <div id="certificate" class="certificate"></div>
-                <div id="qrCodeSection" class="qr-code"></div>
-            </div>
-            <div class="certificate-actions">
-                <button id="downloadBtn" class="action-btn"><i class="fas fa-download"></i> Download</button>
-                <button id="printBtn" class="action-btn"><i class="fas fa-print"></i> Print</button>
-                <button id="newCertBtn" class="action-btn"><i class="fas fa-plus"></i> Create New</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Religion Converter</h3>
-                <p>This is only a lokoko</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="underdev.html">Privacy Policy</a></li>
-                    <li><a href="underdev.html">Terms of Service</a></li>
-                    <li><a href="underdev.html">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p><i class="fas fa-envelope"></i> Brentdelacruz@gmail.com</p>
+            <h2>This Website Has Closed</h2>
+            <p>We appreciate your support and interest in our services over the years. We've moved to a new platform to better serve your needs with enhanced features and improved user experience.</p>
+            
+            <p>All of our resources, certificates, and services are now available at our new website.</p>
+            
+            <a href="https://www.sulasok.cc/" class="redirect-button">
+                Visit Our New Website <i class="fas fa-arrow-right"></i>
+            </a>
+            
+            <div class="footer">
+                <p>&copy; 2025 Religion Converter. All rights reserved.</p>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 Qpal Converter. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- ...existing code... -->
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-<script src="scripts/main.js"></script>
-<!-- ...existing code... -->
+        
+        <div class="decoration"></div>
+    </div>
+</body>
 </html>
